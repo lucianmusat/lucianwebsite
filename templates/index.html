@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lucian's Website</title>
+  <link href="{{ url_for('static', path='/style.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <a href="/"><div class="lm-logo"><span>LM</span></div></a>
+        <div class="top-menu-container">
+            <div class="top-menu-items">
+                <a href="/"><div class="top-menu-item">About</div></a>
+                <a href="/resume"><div class="top-menu-item">Resume</div></a>
+                <a href="/contact"><div class="top-menu-item">Contact</div></a>
+            </div>
+        </div>
+
+        <div class="hero-section">
+            <div class="hero-section-left">
+                <div class="hero-section-left-container">
+                    <div class="line1"><h2>Hi, I am Lucian, and I am</h2></div>
+                    <div class="line3"><h1>Software Engineer</h1></div>
+                    <div class="line2"><h2>a</h2></div>
+                    <div class="hero-section-left-description">
+                        <p>I currently work as a Backend engineer at Media Distillery in Amsterdam.
+                            If you want to see more of what I do you can follow me on LinkedIn or go to my Resume page.</p>
+                    </div>
+                    <div class="hero-section-buttons">
+                        <button class="contact-me-button" onclick="redirectToContact()">Contact me</button>
+                        <button class="resume-button" onclick="redirectToResume()">Check my resume</button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-section-right">
+                <div class="hero-section-right-image" title="An AI generated image of me"></div>
+            </div>
+        </div>
+
+        <div class="projects-introduction">
+            <div class="projects-introduction-title">My Passion Projects</div>
+            <div class="projects-introduction-description">These are some projects that I am sometimes working on at home when I take a break from gaming.</div>
+        </div>
+
+        <div class="projects-wrapper">
+            <div class="projects-container">
+                <div class="project-item">
+                    <div class="project-item-image-1"></div>
+                    <div class="project-item-title"><a href="https://github.com/lucianmusat/parastas" target="_blank">Parastas</a></div>
+                    <div class="project-item-description">Docker container monitoring tool using Java & Spring Framework</div>
+                </div>
+                <div class="project-item">
+                    <div class="project-item-image-2"></div>
+                    <div class="project-item-title"><a href="http://lucianmusat.online/mancala" target="_blank">Mancala</a></div>
+                    <div class="project-item-description">Implementation of the Mancala board game using Python & FastAPI</div>
+                </div>
+                <div class="project-item">
+                    <div class="project-item-image-3"></div>
+                    <div class="project-item-title"><a href="https://play.google.com/store/apps/details?id=com.amibadesign.fruittiles" target="_blank">Fruit Tiles</a></div>
+                    <div class="project-item-description">Memory based tile game using Java and Android SDK</div>
+                </div>
+                <div class="project-item">
+                    <div class="project-item-image-4"></div>
+                    <div class="project-item-title"><a href="https://github.com/lucianmusat/ohmygad" target="_blank">OhMyGAD</a></div>
+                    <div class="project-item-description">Microservice that monitors my trash day and notifies me using Philips Hue lights in the house. Written in Python</div>
+                </div>
+                <div class="project-item">
+                    <div class="project-item-image-5"></div>
+                    <div class="project-item-title"><a href="#">Indy Detector</a></div>
+                    <div class="project-item-description">Machine Learning program that detects my cat Indy peeing on the doormat. Using Python and Tensorflow</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-social-media">
+                <a href="https://www.linkedin.com/in/lucian-musat/" target="_blank"><div class="footer-linkedin"></div></a>
+                <a href="https://github.com/lucianmusat" target="_blank"><div class="footer-github"></div></a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function redirectToContact() {
+            window.location.href = "/contact";
+        }
+
+        function redirectToResume() {
+            window.location.href = "/resume";
+        }
+    </script>
+
+</body>
+</html>

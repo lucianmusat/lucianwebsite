@@ -1,0 +1,312 @@
+.container {
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+.top-menu-container {
+    margin: auto;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lm-logo {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    float: left;
+    color: black;
+}
+
+.lm-logo span {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.lm-logo:hover {
+    color: #2e2e2e;
+}
+
+.top-menu-items {
+    display: inline-block;
+    text-align: center;
+}
+
+.top-menu-item {
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #010000;
+    margin: 0 10px;
+}
+
+.top-menu-item:hover {
+    color: #616060;
+}
+
+.hero-section {
+    margin-top:150px;
+    height: 300px;
+}
+
+.hero-section-left {
+    float: left;
+    width: 50%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section-left-container {
+    width: 500px;
+    float: right;
+}
+
+.hero-section-left h1 {
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.hero-section-left h2 {
+    font-size: 42px;
+    font-weight: lighter;
+}
+
+.line1 {
+    float: right;
+    margin-bottom: -80px;
+}
+
+.line2, .line3 {
+    float: right;
+    height: 50%;
+}
+
+.line2 h2 {
+    font-size: 42px;
+    font-weight: lighter;
+    margin-right: 20px;
+}
+
+.line3 h1 {
+    font-size: 46px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.hero-section-left-description {
+    font-size: 14px;
+    margin-top: -40px;
+    margin-bottom: 20px;
+    float: right;
+    width: 400px;
+    text-align: justify;
+}
+
+.hero-section-buttons {
+    float: right;
+    width: 400px;
+}
+
+.contact-me-button {
+    background-color: #323232;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    margin-right: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 140px;
+    height: 45px;
+}
+
+.contact-me-button:hover {
+    background-color: #505050;
+}
+
+.resume-button {
+    background-color: white;
+    color: #323232;
+    border: 1px solid #323232;
+    border-radius: 12px;
+    padding: 10px 5px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 140px;
+    height: 45px;
+}
+
+.resume-button:hover {
+    background-color: #f2f2f2;
+}
+
+.hero-section-right {
+    float: right;
+    width: 50%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section-right-image {
+    background-image: url("my_face_ai_300.png");
+    filter: grayscale(100%);
+    height: 300px;
+    background-repeat: no-repeat;
+    margin-left: 50px;
+}
+
+.hero-section-right-image:hover {
+    filter: none;
+}
+
+.projects-introduction {
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-introduction-title {
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.projects-introduction-description {
+    font-size: 14px;
+    text-align: center;
+    font-weight: lighter;
+    width: 400px;
+}
+
+.projects-wrapper {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-container {
+    width: 1200px;
+}
+
+.project-item {
+    background-color: #d9d9d9;
+    border-radius: 25px;
+    height: 250px;
+    width: 300px;
+    display: inline-block;
+    margin: 10px 10px 10px 10px;
+    vertical-align: top;
+    padding: 10px;
+    border: 1px solid #c2c1c1;
+    filter: grayscale(100%);
+}
+
+.project-item:hover {
+    background-color: #f2f2f2;
+    filter: none;
+}
+
+.project-item a {
+    text-decoration: none;
+    color: #010000;
+}
+
+.project-item-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.project-item-description {
+    font-size: 14px;
+}
+
+.project-item-image-1 {
+    background-image: url("parastas_250.png");
+    height: 106px;
+    width: 250px;
+    background-repeat: no-repeat;
+    margin: 10px 10px 10px 25px;
+}
+
+.project-item-image-2 {
+    background-image: url("mancala_250.png");
+    height: 150px;
+    width: 250px;
+    background-repeat: no-repeat;
+    margin: 10px 10px 10px 25px;
+}
+
+.project-item-image-3 {
+    background-image: url("fruittiles_90.png");
+    height: 150px;
+    width: 90px;
+    background-repeat: no-repeat;
+    margin: 10px 10px 10px 105px;
+}
+
+.project-item-image-4 {
+    background-image: url("omg_150.png");
+    height: 150px;
+    width: 106px;
+    background-repeat: no-repeat;
+    margin: 10px 10px 10px 97px;
+}
+
+.project-item-image-5 {
+    background-image: url("indy_detector_150.png");
+    height: 150px;
+    width: 147px;
+    background-repeat: no-repeat;
+    margin: 10px 10px 10px 76px;
+}
+
+.footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-linkedin {
+    background-image: url("linkedin_30.png");
+    height: 30px;
+    width: 50px;
+    background-repeat: no-repeat;
+    margin: 0px 10px 0px 10px;
+    float: right;
+    filter: grayscale(100%);
+}
+
+.footer-linkedin:hover {
+    filter: none;
+}
+
+.footer-github {
+    background-image: url("github_30.png");
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    margin: 0px 10px 0px 10px;
+    float: right;
+    filter: grayscale(100%);
+}
+
+.footer-github:hover {
+    filter: none;
+}
