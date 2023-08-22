@@ -97,6 +97,14 @@
     margin-right: 20px;
 }
 
+.line2 h2:hover {
+    color: #616060;
+}
+
+.line3 h1:hover {
+    color: #4967a1;
+}
+
 .line3 h1 {
     font-size: 46px;
     font-weight: bold;
