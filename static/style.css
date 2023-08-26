@@ -323,3 +323,153 @@
 .footer-github:hover {
     filter: none;
 }
+
+.column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.job {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 270px;
+    filter: grayscale(100%);
+}
+
+.job:hover {
+    border: 1px solid #616060;
+    filter: none;
+}
+
+.job-title {
+    color: #4967a1;
+}
+
+.job-company {
+    font-weight: bold;
+    color: black;
+}
+
+.job-text {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+}
+
+.job-picture {
+    height: 200px;
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.job-picture img {
+    display: block;
+    margin: 0 auto;
+}
+
+.column-container {
+    width: 1200px;
+}
+
+.column-flex {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    width: 1200px;
+}
+
+.column a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.empty-divider {
+    height: 300px;
+}
+
+.red { background-color: red; }
+.blue { background-color: blue; }
+.orange { background-color: orange; }
+.green { background-color: green; }
+.yellow { background-color: yellow; }
+.brown { background-color: brown; }
+
+
+.right-arrow {
+    background-image: url("right_arrow.png");
+    height: 135px;
+    width: 401px;
+    background-repeat: no-repeat;
+}
+
+.left-arrow {
+    background-image: url("left_arrow.png");
+    height: 135px;
+    width: 401px;
+    background-repeat: no-repeat;
+}
+
+.right-arrow:hover {
+    filter: opacity(0.5);
+}
+
+.left-arrow:hover {
+    filter: opacity(0.5);
+}
+
+.bottom-year {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    height: 180px;
+    position: relative;
+}
+
+.bottom-year-text {
+    text-align: left;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+.bottom-year-text:hover {
+    color: #616060;
+}
+
+.top-year {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    height: 140px;
+    position: relative;
+}
+
+.top-year-text {
+    text-align: right;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+
+.top-year-text:hover {
+    color: #616060;
+}
+
+.top-year-text-2 {
+    text-align: right;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.top-year-text-2:hover {
+    color: #616060;
+}

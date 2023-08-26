@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lucian Musat</title>
+  <link href="{{ url_for('static', path='/style.css') }}" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', path='/favicon.ico') }}">
+</head>
+
+<body>
+    <div class="container">
+        <a href="/"><div class="lm-logo"><span>LM</span></div></a>
+        <div class="top-menu-container">
+            <div class="top-menu-items">
+                <a href="/"><div class="top-menu-item">About</div></a>
+                <a href="/resume"><div class="top-menu-item">Resume</div></a>
+                <a href="#"><div class="top-menu-item">Contact</div></a>
+            </div>
+        </div>
+
+        <div class="projects-wrapper">
+            <div class="column-container">
+                <div class="column-flex">
+                    <div class="column" style="width: 300px;">
+                        <a href="#">
+                          <div class="job">
+                            <div class="job-title">Support Engineer</div>
+                            <div class="job-picture"><img src="{{ url_for('static', path='/eservglobal.png') }}"></div>
+                            <div class="job-company">EservGlobal</div>
+                            <div class="job-text">Australian telecom software company</div>
+                          </div>
+                        </a>
+                        <div class="empty-divider"></div>
+                        <a href="#">
+                          <div class="job">
+                            <div class="job-title">Software Engineer</div>
+                            <div class="job-picture"><img src="{{ url_for('static', path='/activevideo.png') }}"></div>
+                            <div class="job-title">ActiveVideo</div>
+                            <div class="job-text">Dutch-American video streaming company</div>
+                          </div>
+                        </a>
+                    </div>
+                    <div class="column">
+                        <div style="height: 60px; width: 100%"></div>
+                        <div class="bottom-year"><div class="bottom-year-text">2010</div></div>
+                        <div class="right-arrow"></div>
+                        <div class="top-year"><div class="top-year-text">2013</div></div>
+                        <div class="left-arrow"></div>
+                        <div class="bottom-year"><div class="bottom-year-text">2016</div></div>
+                        <div class="right-arrow"></div>
+                        <div class="top-year"><div class="top-year-text-2">2023</div></div>
+                    </div>
+                    <div class="column" style="width: 300px;">
+                        <div class="empty-divider"></div>
+                        <a href="#">
+                          <div class="job">
+                            <div class="job-title">Automation Engineer</div>
+                            <div class="job-picture"><img src="{{ url_for('static', path='/intel.png') }}"></div>
+                            <div class="job-title">Intel Corporation</div>
+                            <div class="job-text">American microchip manufacturer</div>
+                          </div>
+                        </a>
+                        <div class="empty-divider"></div>
+                        <a href="#">
+                          <div class="job">
+                            <div class="job-title">Backend Engineer</div>
+                            <div class="job-picture"><img src="{{ url_for('static', path='/mediadistillery.png') }}"></div>
+                            <div class="job-title">Media Distillery</div>
+                            <div class="job-text">Dutch video analysis company</div>
+                          </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-social-media">
+                <a href="https://www.linkedin.com/in/lucian-musat/" target="_blank"><div class="footer-linkedin"></div></a>
+                <a href="https://github.com/lucianmusat" target="_blank"><div class="footer-github"></div></a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const middleColumn = document.querySelector(".column:nth-child(2)");
+
+        window.addEventListener("scroll", () => {
+          const scrollTop = window.scrollY;
+          middleColumn.style.transform = `translateY(-${scrollTop * 0.1}px)`;
+        });
+    </script>
+
+</body>
+
+</html>
