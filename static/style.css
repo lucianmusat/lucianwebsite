@@ -523,3 +523,13 @@
 .top-year-text-2:hover {
     color: #616060;
 }
+
+.text-box {
+    position: absolute;
+    display: none;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+}

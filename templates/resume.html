@@ -34,7 +34,7 @@
                     </div>
                     <div class="right-column">
                         <a href="#">
-                          <div class="job" data-id="job1">
+                          <div class="job" data-id="job1" onmouseover="showTextBox(1)" onmouseout="hideTextBox()">
                             <div class="job-title">Support Engineer</div>
                             <div class="job-picture"><img src="{{ url_for('static', path='/eservglobal.png') }}"></div>
                             <div class="job-company">EservGlobal</div>
@@ -43,7 +43,7 @@
                         </a>
 
                          <a href="#">
-                          <div class="job" data-id="job2">
+                          <div class="job" data-id="job2" onmouseover="showTextBox(2)" onmouseout="hideTextBox()">
                             <div class="job-title">Automation Engineer</div>
                             <div class="job-picture"><img src="{{ url_for('static', path='/intel.png') }}"></div>
                             <div class="job-title">Intel Corporation</div>
@@ -52,7 +52,7 @@
                         </a>
 
                          <a href="#">
-                          <div class="job" data-id="job3">
+                          <div class="job" data-id="job3" onmouseover="showTextBox(3)" onmouseout="hideTextBox()">
                             <div class="job-title">Software Engineer</div>
                             <div class="job-picture"><img src="{{ url_for('static', path='/activevideo.png') }}"></div>
                             <div class="job-title">ActiveVideo</div>
@@ -61,13 +61,16 @@
                         </a>
 
                          <a href="#">
-                          <div class="job" data-id="job4">
+                          <div class="job" data-id="job4" onmouseover="showTextBox(4)" onmouseout="hideTextBox()">
                             <div class="job-title">Backend Engineer</div>
                             <div class="job-picture"><img src="{{ url_for('static', path='/mediadistillery.png') }}"></div>
                             <div class="job-title">Media Distillery</div>
                             <div class="job-text">Dutch video analysis company</div>
                           </div>
                         </a>
+
+                        <div class="text-box" id="text-box">This is the text box</div>
+
                     </div>
                 </div>
             </div>
@@ -104,6 +107,37 @@
             jobs.forEach(job => job.classList.remove('hovered'));
           });
         });
+
+        const textBox = document.getElementById('text-box');
+        document.addEventListener('mousemove', (e) => {
+            textBox.style.left = (e.pageX + 10) + 'px';
+            textBox.style.top = (e.pageY + 10) + 'px';
+        });
+
+        function showTextBox(target) {
+            textBox.style.display = 'block';
+            switch (target) {
+                case 1:
+                    textBox.innerText = 'My first real job. Before this I was in university, and also moonlighting as a web developer. \nI was doing L4 support for a product called Mailis, sometimes involved digging in the source code and maybe deliver patches.\n\nMain technologies were Java, Solaris, Oracle DB'
+                    break;
+                case 2:
+                    textBox.innerText = 'Started as a contractor, but after a short while got hired as an internal employee.\nAt first I worked as a QA engineer for Android TV and Tizen, but switched projects to Yocto where I stayed until the end.\n\nMain technologies were Python, Yocto Linux, lots of hardware harnessing for automation, Lava CI';
+                    break;
+                case 3:
+                    textBox.innerText = 'Got contacted by an Amsterdam based recruiter out of the blue for this position and decided to give it a try.\nStarted out as an Automation Engineer and after a few years moved to C++ developer.\n\nMain technologies were C++, Python, Docker, video streaming, ffmpeg, gstreamer';
+                    break;
+                case 4:
+                    textBox.innerText = 'Current job, decided to continue in the field of video processing but also dive into AWS and platform engineering. \n\nMain technologies are AWS, Java, Spring, Docker, Kubernetes, Cassandra, Elasticsearch';
+                    break;
+                default:
+                    textBox.innerText = 'Unknown target';
+            }
+        }
+
+        function hideTextBox() {
+            textBox.style.display = 'none';
+        }
+
     </script>
 
 </body>
