@@ -340,9 +340,13 @@
     filter: grayscale(100%);
 }
 
-.job:hover {
+.job[data-id]:hover {
     border: 1px solid #616060;
     filter: none;
+}
+
+.job.hovered {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .job-title {
@@ -374,7 +378,7 @@
 }
 
 .column-container {
-    width: 1200px;
+    width: 1000px;
 }
 
 .column-flex {
@@ -382,17 +386,63 @@
     display: flex;
     flex-direction: row;
     flex: 1;
-    width: 1200px;
-}
-
-.column a {
-    display: block;
-    text-align: center;
-    text-decoration: none;
+    width: 1000px;
 }
 
 .empty-divider {
     height: 300px;
+}
+
+.left-column {
+    width: 650px;
+    margin-right: 50px;
+}
+
+.left-column a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #4967a1;
+}
+
+.right-column {
+    width: 300px;
+}
+
+.year-divider {
+    height: 18px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-color: #616060;
+    background: linear-gradient(to right, white, #f5f7f6);
+    border-radius: 10px;
+}
+
+.year-divider a {
+    text-decoration: none;
+    text-color: #616060;
+}
+
+.year-divider:hover {
+    filter: opacity(0.5);
+}
+
+.line-divider {
+    height: 300px;
+    border-left: 2px solid #616060;
+}
+
+.line-divider-start {
+  height: 150px;
+  border-left: 2px solid;
+  border-image: linear-gradient(to bottom, white, #616060) 1;
+}
+
+.line-divider-end {
+  height: 150px;
+  border-left: 2px solid;
+  border-image: linear-gradient(to bottom, #616060, white) 1;
 }
 
 .red { background-color: red; }
