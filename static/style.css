@@ -294,6 +294,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 .footer-linkedin {
@@ -351,6 +355,11 @@
 
 .job-title {
     color: #4967a1;
+}
+
+.right-column a {
+    text-decoration: none;
+    color: #010000;
 }
 
 .job-company {
@@ -532,4 +541,51 @@
     padding: 10px;
     border-radius: 5px;
     width: 300px;
+}
+
+.about-wrapper {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 80vh;
+}
+
+.speech-bubble {
+  position: relative;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  margin: 20px;
+  width: 400px;
+}
+
+.speech-bubble::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent #f5f5f5;
+  transform: translateY(-50%);
+}
+
+.speech-bubble a {
+    text-decoration: none;
+    color: #4967a1;
+    font-weight: bold;
+}
+
+.speech-bubble a:hover {
+    color: #616060;
+}
+
+.about-image {
+    filter: grayscale(100%);
+}
+
+.about-image:hover {
+    filter: none;
 }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lucian Musat</title>
+  <link href="{{ url_for('static', path='/style.css') }}" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', path='/favicon.ico') }}">
+</head>
+
+<body>
+    <div class="container">
+        <a href="/"><div class="lm-logo"><span>LM</span></div></a>
+        <div class="top-menu-container">
+            <div class="top-menu-items">
+                <a href="/"><div class="top-menu-item">About</div></a>
+                <a href="/resume"><div class="top-menu-item">Resume</div></a>
+                <a href="/contact"><div class="top-menu-item">Contact</div></a>
+            </div>
+        </div>
+
+        <div class="about-wrapper">
+            <div class="speech-bubble">
+                {{ message|safe }}
+            </div>
+            <div class="about-image">
+                <img src="{{ url_for('static', path='/cutout.png') }}" alt="Another AI generated representation of me" title="Another AI generated representation of me">
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-social-media">
+                <a href="https://www.linkedin.com/in/lucian-musat/" target="_blank"><div class="footer-linkedin"></div></a>
+                <a href="https://github.com/lucianmusat" target="_blank"><div class="footer-github"></div></a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
