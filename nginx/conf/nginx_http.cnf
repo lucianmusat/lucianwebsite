@@ -1,0 +1,54 @@
+server_names_hash_bucket_size 64;
+
+  server {
+    listen 80;
+    server_name lucianmusat.online www.lucianmusat.online lucianmusat.nl www.lucianmusat.nl;
+
+    location / {
+      proxy_pass http://192.168.1.196:8000;
+      proxy_set_header Host $host;
+      proxy_set_header X-Real-IP $remote_addr;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_set_header X-Forwarded-Proto $scheme;
+    }
+  }
+
+  server {
+    listen 80;
+    server_name mancala.lucianmusat.online mancala.lucianmusat.nl;
+
+    location / {
+      proxy_pass http://192.168.1.196:8001;
+      proxy_set_header Host $host;
+      proxy_set_header X-Real-IP $remote_addr;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_set_header X-Forwarded-Proto $scheme;
+    }
+  }
+
+  server {
+    listen 80;
+    server_name parastas.lucianmusat.online parastas.lucianmusat.nl;
+
+    location / {
+      proxy_pass http://192.168.1.196:8080;
+      proxy_set_header Host $host;
+      proxy_set_header X-Real-IP $remote_addr;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_set_header X-Forwarded-Proto $scheme;
+    }
+  }
+
+  server {
+    listen 80;
+    server_name spellchecker.lucianmusat.online spellchecker.lucianmusat.nl;
+
+    location / {
+      proxy_pass http://192.168.1.196:8082;
+      proxy_set_header Host $host;
+      proxy_set_header X-Real-IP $remote_addr;
+      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+      proxy_set_header X-Forwarded-Proto $scheme;
+      proxy_http_version 1.1;
+    }
+  }
