@@ -1,14 +1,12 @@
 FROM python:3.10
 
 COPY nginx/conf/nginx.conf /etc/nginx/conf.d/default.conf
-COPY nginx/conf/website.conf /etc/nginx/sites-available/
 COPY nginx/conf/mancala.conf /etc/nginx/sites-available/
 COPY nginx/conf/parastas.conf /etc/nginx/sites-available/
 COPY nginx/conf/spellchecker.conf /etc/nginx/sites-available/
 
 RUN mkdir /etc/nginx/sites-enabled
 
-RUN ln -s /etc/nginx/sites-available/website.conf /etc/nginx/sites-enabled/
 RUN ln -s /etc/nginx/sites-available/mancala.conf /etc/nginx/sites-enabled/
 RUN ln -s /etc/nginx/sites-available/parastas.conf /etc/nginx/sites-enabled/
 RUN ln -s /etc/nginx/sites-available/spellchecker.conf /etc/nginx/sites-enabled/
